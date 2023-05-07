@@ -1,31 +1,3 @@
-# Automatic .env and nodes.md Script for Farmerbot
-
-The following script generates the .env and nodes.md files for the Farmerbot.
-
-This is a first draft. It should write the files properly. I set this as an issue to get feedback from the community and the dev team and then adjust accordingly.
-
-***
-
-Steps
-
-* Download the script
-  * ```
-    wget -O farmerbot_script.sh 
-    ```
-* Give permissions to run the script
-  * ```
-    chmod +x farmerbot_script.sh
-    ```
-* Run the script
-  * ```
-    sudo ./farmerbot_script.sh
-    ```
-* Enter the values asked
-* The .env and nodes.md files are saved in the folder ~/farmerbot_script
-
-***
-
-```
 #!/bin/bash
 
 # Creating the folder and opening it
@@ -165,4 +137,3 @@ echo !!farmerbot.powermanager.configure >> nodes.md
 echo -e '\t'wake_up_threshold:$answer1 >> nodes.md
 echo -e '\t'periodic_wakeup:$answer2 >> nodes.md
 echo -e '\t'periodic_wakeup_limit:$answer3 >> nodes.md
-```
