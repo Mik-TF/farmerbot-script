@@ -2,7 +2,7 @@
 
 The following script generates the .env and nodes.md files for the Farmerbot.
 
-This is a first draft. It should write the files properly. I set this as an issue to get feedback from the community and the dev team and then adjust accordingly.
+This is a first draft. It should write the files properly. I set this as an [issue](https://github.com/threefoldtech/farmerbot/issues/33) to get feedback from the community and the dev team and then adjust accordingly.
 
 ***
 
