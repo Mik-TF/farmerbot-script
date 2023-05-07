@@ -28,4 +28,4 @@ Steps
     sudo ./farmerbot_script.sh
     ```
 * Enter the values asked
-* The .env and nodes.md files are saved in the folder ~/farmerbot_script
+* The .env and nodes.md files are saved in the folder ~/farmerbot_script/farmerbot_files
