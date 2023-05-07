@@ -10,6 +10,9 @@ Steps
 
 * Create a folder to store the script and files
   * ```
+    cd ~
+    ```
+  * ```
     mkdir -p farmerbot_script && cd "$_" || exit
     ```
 * Download the script
