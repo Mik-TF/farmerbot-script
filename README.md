@@ -10,7 +10,7 @@ Steps
 
 * Download the script
   * ```
-    wget -O farmerbot_script.sh 
+    wget -O farmerbot_script.sh https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/farmerbot_script.sh
     ```
 * Give permissions to run the script
   * ```
