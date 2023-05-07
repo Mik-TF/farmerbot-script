@@ -8,6 +8,10 @@ This is a first draft. It should write the files properly. I set this as an issu
 
 Steps
 
+* Create a folder to store the script and files
+  * ```
+    mkdir -p farmerbot_script && cd "$_" || exit
+    ```
 * Download the script
   * ```
     wget -O farmerbot_script.sh https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/farmerbot_script.sh

@@ -2,8 +2,8 @@
 
 # Creating the folder and opening it
 
-cd ~ || exit
-mkdir -p farmerbot_script && cd "$_" || exit
+cd "$(dirname "$0")" || exit
+mkdir -p farmerbot_files && cd "$_" || exit
 
 # Delete the files .env and nodes.md if they exist
 
