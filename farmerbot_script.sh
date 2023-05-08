@@ -5,10 +5,10 @@
 cd "$(dirname "$0")" || exit
 mkdir -p farmerbot_files && cd "$_" || exit
 
-# Delete the files .env and nodes.md if they exist
+# Delete the files .env and config.md if they exist
 
 rm -f .env
-rm -f nodes.md
+rm -f config.md
 
 # SECTION 1: Creating the .env file
 
@@ -51,11 +51,11 @@ while true; do
     fi 
 done
 
-# SECTION 2: Creating the nodes.md file
+# SECTION 2: Creating the config.md file
 
 # SECTION 2.1: Nodes Manager section
 
-echo My nodes >> nodes.md
+echo My nodes >> config.md
 
 while true; do
 
@@ -68,7 +68,7 @@ while true; do
 
         for ((i = 1; i <= nodes; i++))
         do 
-            echo !!farmerbot.nodemanager.define >> nodes.md
+            echo !!farmerbot.nodemanager.define >> config.md
 
             while true; do
                 echo -n "What is your node ID? (node number $i)"
@@ -76,7 +76,7 @@ while true; do
                 read answer
 
                 if (($answer >= 1)); then
-                    echo -e '\t'id:$answer >> nodes.md
+                    echo -e '\t'id:$answer >> config.md
                     echo
                     break
                 else
@@ -92,7 +92,7 @@ while true; do
                 read answer
 
                 if (($answer >= 1)); then
-                    echo -e '\t'id:$answer >> nodes.md
+                    echo -e '\t'id:$answer >> config.md
                     echo
                     break
                 else
@@ -109,7 +109,7 @@ while true; do
                 read answer
 
                 if [ "$answer" = "true" ] || [ "$answer" = "false" ] ; then
-                    echo -e '\t'never_shutdown:$answer >> nodes.md
+                    echo -e '\t'never_shutdown:$answer >> config.md
                     echo
                     break
                 elif [ "$answer" == "" ]; then
@@ -129,7 +129,7 @@ while true; do
                 if [ "$answer" = "" ]; then
                     break
                 elif (($answer >= 1 && $answer <= 4)); then
-                    echo -e '\t'cpuoverprovision:$answer >> nodes.md
+                    echo -e '\t'cpuoverprovision:$answer >> config.md
                     echo
                     break
                 else
@@ -145,7 +145,7 @@ while true; do
                 echo 'OPTIONAL: Press ENTER to skip'
                 read answer
                 if [ "$answer" = "true" ] || [ "$answer" = "false" ] ; then
-                    echo -e '\t'public_config:$answer >> nodes.md
+                    echo -e '\t'public_config:$answer >> config.md
                     echo
                     break
                 elif [ "$answer" == "" ]; then
@@ -163,7 +163,7 @@ while true; do
                 echo 'OPTIONAL: Press ENTER to skip'
                 read answer
                 if [ "$answer" = "true" ] || [ "$answer" = "false" ] ; then
-                    echo -e '\t'dedicated:$answer >> nodes.md
+                    echo -e '\t'dedicated:$answer >> config.md
                     echo
                     break
                 elif [ "$answer" == "" ]; then
@@ -181,12 +181,12 @@ while true; do
                 echo 'OPTIONAL: Press ENTER to skip'
                 read answer
                 if [ "$answer" = "true" ] || [ "$answer" = "false" ] ; then
-                    echo -e '\t'certified:$answer >> nodes.md
-                    echo -e >> nodes.md
+                    echo -e '\t'certified:$answer >> config.md
+                    echo -e >> config.md
                     echo
                     break
                 elif [ "$answer" == "" ]; then
-                    echo -e >> nodes.md
+                    echo -e >> config.md
                     break
                 else
                     echo
@@ -209,8 +209,8 @@ done
 
 # SECTION 2.2: Farmer Manager section
 
-echo Farm configuration >> nodes.md
-echo !!farmerbot.farmmanager.define >> nodes.md
+echo Farm configuration >> config.md
+echo !!farmerbot.farmmanager.define >> config.md
 
 while true; do
 
@@ -219,7 +219,7 @@ while true; do
     read answer
 
     if (($answer >= 1)); then
-        echo -e '\t'id:$answer >> nodes.md
+        echo -e '\t'id:$answer >> config.md
         echo
         break
     else
@@ -235,8 +235,8 @@ while true; do
     read answer
 
     if [[ "$answer" =~ ^[0-9]+$ ]]; then
-        echo -e '\t'public_ips:$answer >> nodes.md
-        echo -e >> nodes.md
+        echo -e '\t'public_ips:$answer >> config.md
+        echo -e >> config.md
         echo
         break
     else
@@ -248,8 +248,8 @@ done
 
 # SECTION 2.3: Power Manager section
 
-echo Power configuration >> nodes.md
-echo !!farmerbot.powermanager.configure >> nodes.md
+echo Power configuration >> config.md
+echo !!farmerbot.powermanager.configure >> config.md
 
 while true; do
     echo -n 'What is your wake up threshold? (between 50 and 80)'
@@ -257,7 +257,7 @@ while true; do
     read answer 
 
     if (($answer >= 50 && $answer <= 80)); then
-        echo -e '\t'wake_up_threshold:$answer >> nodes.md
+        echo -e '\t'wake_up_threshold:$answer >> config.md
         echo
         break
     else
@@ -274,7 +274,7 @@ while true; do
 
     if [[ "$answer" =~ ^(1[0-2]|[1-9]):([0-5]?[0-9])(AM|PM)$ ]]; then
         echo
-        echo -e '\t'periodic_wakeup:$answer >> nodes.md
+        echo -e '\t'periodic_wakeup:$answer >> config.md
         break
     else
         echo
@@ -289,7 +289,7 @@ while true; do
     echo 'OPTIONAL: If you press ENTER, the default value will be taken, which is 1.'
     read answer
     if (($answer >= 1 && $answer <= 100)); then
-        echo -e '\t'periodic_wakeup_limit:$answer >> nodes.md
+        echo -e '\t'periodic_wakeup_limit:$answer >> config.md
         echo
         break
     elif [ "$answer" == "" ]; then

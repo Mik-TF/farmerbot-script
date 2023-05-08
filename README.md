@@ -1,6 +1,6 @@
-# Automatic .env and nodes.md Script for Farmerbot
+# Automatic .env and config.md Script for Farmerbot
 
-The following script generates the .env and nodes.md files for the Farmerbot.
+The following script generates the .env and config.md files for the Farmerbot.
 
 This is a first draft. It should write the files properly. I set this as an [issue](https://github.com/threefoldtech/farmerbot/issues/33) to get feedback from the community and the dev team and then adjust accordingly.
 
@@ -28,7 +28,7 @@ This is a first draft. It should write the files properly. I set this as an [iss
     sudo ./farmerbot_script.sh
     ```
 * Enter the values asked
-* The .env and nodes.md files are saved in the folder /farmerbot_script/farmerbot_files
+* The .env and config.md files are saved in the folder /farmerbot_script/farmerbot_files
 
 ***
 
@@ -38,9 +38,9 @@ This is a first draft. It should write the files properly. I set this as an [iss
   * ```
     cd farmerbot_files
     ```
-* See the content of the file `nodes.md`
+* See the content of the file `config.md`
   * ```
-    cat nodes.md
+    cat config.md
     ```
 * See the content of the file `.env`
   * ```
