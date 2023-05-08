@@ -6,7 +6,7 @@ This is a first draft. It should write the files properly. I set this as an [iss
 
 ***
 
-Steps
+Steps to Create the Files
 
 * Create a folder to store the script and files
   * ```
@@ -29,3 +29,18 @@ Steps
     ```
 * Enter the values asked
 * The .env and nodes.md files are saved in the folder /farmerbot_script/farmerbot_files
+
+Steps to See the Content of the Files
+
+* Go to the newly created folder
+  * ```
+    cd farmerbot_files
+    ```
+* See the content of the file `nodes.md`
+  * ```
+    cat nodes.md
+    ```
+* See the content of the file `.env`
+  * ```
+    cat .env
+    ```
