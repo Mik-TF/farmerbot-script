@@ -6,9 +6,9 @@ This is a first draft. It should write the files properly. I set this as an [iss
 
 ***
 
-Steps to Create the Files
+## Steps to Create the Files
 
-* Create a folder to store the script and files
+* Create a folder to store the script and the files
   * ```
     cd ~
     ```
@@ -19,7 +19,7 @@ Steps to Create the Files
   * ```
     wget -O farmerbot_script.sh https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/farmerbot_script.sh
     ```
-* Give permissions to run the script
+* Set the permissions to run the script
   * ```
     chmod +x farmerbot_script.sh
     ```
@@ -30,7 +30,9 @@ Steps to Create the Files
 * Enter the values asked
 * The .env and nodes.md files are saved in the folder /farmerbot_script/farmerbot_files
 
-Steps to See the Content of the Files
+***
+
+## Steps to See the Content of the Files
 
 * Go to the newly created folder
   * ```
