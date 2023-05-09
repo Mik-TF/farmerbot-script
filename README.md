@@ -2,6 +2,8 @@
 
 The following script generates the .env and config.md files for the Farmerbot.
 
+The script is available for both python and bash.
+
 This is a first draft. It should write the files properly. I set this as an [issue](https://github.com/threefoldtech/farmerbot/issues/33) to get feedback from the community and the dev team and then adjust accordingly.
 
 ***
@@ -16,17 +18,32 @@ This is a first draft. It should write the files properly. I set this as an [iss
     mkdir -p farmerbot_script && cd "$_" || exit
     ```
 * Download the script
-  * ```
-    wget -O farmerbot_script.sh https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/farmerbot_script.sh
-    ```
+  * Bash version
+    * ```
+      wget -O farmerbot_script.sh https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/farmerbot_script.sh
+      ```
+  * Python version
+    * ```
+      wget -O farmerbot_script.py https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/farmerbot_script.py
+      ```
 * Set the permissions to run the script
-  * ```
-    chmod +x farmerbot_script.sh
-    ```
+  * Bash version
+    * ```
+      chmod +x farmerbot_script.sh
+      ```
+  * Python version
+    * ```
+      chmod +x farmerbot_script.py
+      ```
 * Run the script
-  * ```
-    sudo ./farmerbot_script.sh
-    ```
+  * Bash version
+    * ```
+      sudo ./farmerbot_script.sh
+      ```
+  * Python version
+    * ```
+      python farmerbot_script.py
+      ```
 * Enter the values asked
 * The .env and config.md files are saved in the folder /farmerbot_script/farmerbot_files
 
