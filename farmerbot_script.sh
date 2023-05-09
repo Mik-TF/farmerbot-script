@@ -92,7 +92,7 @@ while true; do
                 read answer
 
                 if (($answer >= 1)); then
-                    echo -e '\t'id:$answer >> config.md
+                    echo -e '\t'twinid:$answer >> config.md
                     echo
                     break
                 else
