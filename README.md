@@ -1,4 +1,4 @@
-# Automatic .env and config.md Script for Farmerbot
+# Automatic .env and config.md Script for Farmerbot (.sh and .py)
 
 The following script generates the .env and config.md files for the Farmerbot.
 
