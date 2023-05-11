@@ -7,7 +7,7 @@ fn main() {
     is_int := regex.regex_opt("^[0-9]*$") or {panic(err)}
     is_12h_format := regex.regex_opt("^(1[0-2])|[0-9]:[0-5][0-9](AM)|(PM)$") or {panic(err)}
 
-    // Section 0: Creating and going into the directory
+    // SECTION 0: Creating and going into the directory
 
     // Name of new directory
     directory := "farmerbot_files"
