@@ -1,8 +1,8 @@
-# Automatic .env and config.md Script for Farmerbot (.sh and .py)
+# Automatic .env and config.md Script for Farmerbot (Bash, Python and VLang)
 
 The following script generates the .env and config.md files for the Farmerbot.
 
-The script is available for both python and bash.
+The script is available for Bash, Pyhton and VLang.
 
 This is a first draft. It should write the files properly. I set this as an [issue](https://github.com/threefoldtech/farmerbot/issues/33) to get feedback from the community and the dev team and then adjust accordingly.
 
@@ -26,14 +26,14 @@ This is a first draft. It should write the files properly. I set this as an [iss
     * ```
       wget -O farmerbot_script.py https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/farmerbot_script.py
       ```
+  * Vlang version
+    * ```
+      wget -O farmerbot_script.v https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/farmerbot_script.v
+      ```
 * Set the permissions to run the script
   * Bash version
     * ```
       chmod +x farmerbot_script.sh
-      ```
-  * Python version
-    * ```
-      chmod +x farmerbot_script.py
       ```
 * Run the script
   * Bash version
@@ -43,6 +43,10 @@ This is a first draft. It should write the files properly. I set this as an [iss
   * Python version
     * ```
       python farmerbot_script.py
+      ```
+  * Vlang version
+    * ```
+      v run farmerbot_script.v
       ```
 * Enter the values asked
 * The .env and config.md files are saved in the folder /farmerbot_script/farmerbot_files
