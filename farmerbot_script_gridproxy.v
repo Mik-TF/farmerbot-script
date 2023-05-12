@@ -11,27 +11,27 @@ fn main() {
 
     // Section 0: Creating and going into the directory
 
-    // Name of new directory
-    directory := "farmerbot_files"
+    // Name of config directory
+    config_name := "config"
 
     // Path to current directory
     parent_dir := os.getwd()
 
-    // Path to new directory added to current path
-    this_path := parent_dir + "/" + directory
+    // Path to config directory
+    config_dir := parent_dir + "/" + config_name
 
     // Create the directory 
-    os.mkdir(this_path) or {}
+    os.mkdir(config_dir) or {}
 
     // Remove .env and config.md if they exist
-    path_env := this_path + "/" + ".env"
-    path_config := this_path + "/" + "config.md"
+    path_env := parent_dir + "/" + ".env"
+    path_config := config_dir + "/" + "config.md"
 
     os.rm(path_env) or {}
     os.rm(path_config) or {}
 
-    // Change to new directory
-    os.chdir(this_path) or {}
+    // Change to parent directory
+    os.chdir(parent_dir) or {}
 
     // SECTION 1: Creating the .env file
     // Setting the seed phrase
@@ -86,6 +86,9 @@ fn main() {
     this_file.close()
 
     // SECTION 2: Creating the config.md file
+
+    // Change to config directory
+    os.chdir(config_dir) or {}
 
     // Create the file config.md
     this_file = os.create("config.md")!
