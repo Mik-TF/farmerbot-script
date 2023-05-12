@@ -6,6 +6,8 @@ The script is available for Bash, Pyhton and VLang.
 
 This is a first draft. It should write the files properly. I set this as an [issue](https://github.com/threefoldtech/farmerbot/issues/33) to get feedback from the community and the dev team and then adjust accordingly.
 
+EDIT: There is a new version with queries to Grid Proxy to complete data when possible. With the node ID, we get the twin ID, the dedicated status, certification status, public configuration status, as also the farm. With the farm, we calculate the public IPs. Thus the farmer only needs to write the minimum information.
+
 ***
 
 ## Steps to Create the Files
@@ -26,9 +28,13 @@ This is a first draft. It should write the files properly. I set this as an [iss
     * ```
       wget -O farmerbot_script.py https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/farmerbot_script.py
       ```
-  * Vlang version
+  * Vlang version basic
     * ```
       wget -O farmerbot_script.v https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/farmerbot_script.v
+      ```
+  * Vlang version Gridproxy (automatic completion of data when possible)
+    * ```
+      wget -O farmerbot_script.v https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/farmerbot_script_gridproxy.v
       ```
 * Set the permissions to run the script
   * Bash version
