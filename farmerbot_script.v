@@ -312,6 +312,9 @@ fn main() {
             this_file.writeln('\tperiodic_wakeup_limit:' + answer)!
             break
 
+        } else if answer == "" {
+            break    
+            
         } else {
             println('ERROR: The number must be an integer and between 1 and 100 inclusively.\n')   
         }
