@@ -35,8 +35,8 @@ We present a quick way to deploy the Farmerbot.
 
 ## Steps to Run the Farmerbot
 
-* Install [docker](https://docs.docker.com/engine/install/)
-* To download the Farmerbot, write the following
+* Install and run [docker](https://docs.docker.com/engine/install/)
+* To download the Farmerbot `.yaml` file, write the following
   * ```
     wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
     ```
