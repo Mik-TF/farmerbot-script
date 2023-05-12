@@ -25,7 +25,7 @@ We present a quick way to deploy the Farmerbot.
   * Run the file creator
     * Download [Vlang](https://vlang.io/)
     * ```
-      v run farmerbot_script.v
+      v run fbot_file_creator.v
       ```
   * Enter the values asked
   * The .env file is saved in the parent folder
