@@ -20,12 +20,11 @@ We present a quick way to deploy the Farmerbot.
 * Download and run the file creator
   * Download the file creator
     * ```
-      wget -O fbot_file_creator.v https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/fbot_file_creator.v
+      wget -O fbot_file_creator https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/fbot_file_creator
       ```
   * Run the file creator
-    * Download [Vlang](https://vlang.io/)
     * ```
-      v run fbot_file_creator.v
+      v fbot_file_creator.v
       ```
   * Enter the values asked
   * The .env file is saved in the parent folder
