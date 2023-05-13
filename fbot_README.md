@@ -24,7 +24,7 @@ We present a quick way to deploy the Farmerbot.
       ```
   * Run the file creator
     * ```
-      v fbot_file_creator.v
+      ./fbot_file_creator
       ```
   * Enter the values asked
   * The .env file is saved in the parent folder
