@@ -22,6 +22,10 @@ We present a quick way to deploy the Farmerbot.
     * ```
       wget -O fbot_file_creator https://raw.githubusercontent.com/Mik-TF/farmerbot-script/main/fbot_file_creator
       ```
+  * Set the permissions
+    * ```
+      chmod +x fbot_file_creator
+      ```
   * Run the file creator
     * ```
       ./fbot_file_creator
