@@ -78,8 +78,6 @@ fn main() {
 
         }
 
-        this_file.close()
-
     }
 
     this_file.close()
