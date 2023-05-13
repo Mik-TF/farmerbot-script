@@ -70,7 +70,6 @@ fn main() {
             this_file.writeln('SUBSTRATE=wss://tfchain.'+answer+'.grid.tf:443')! 
 			grid_url_node = 'https://gridproxy.' + answer + '.grid.tf/nodes/'
             network_farm = answer  
-            println(network_farm) 
             break    
 
         } else {
