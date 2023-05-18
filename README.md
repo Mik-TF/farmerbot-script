@@ -44,7 +44,7 @@ EDIT: There is a new version with queries to Grid Proxy to complete data when po
 * Run the script
   * Bash version
     * ```
-      sudo ./farmerbot_script.sh
+      ./farmerbot_script.sh
       ```
   * Python version
     * ```
