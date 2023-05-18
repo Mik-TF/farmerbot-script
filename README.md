@@ -1,3 +1,5 @@
+*** NOTE: You can now use the binaries code to deploy this program. It is available [here](https://github.com/Mik-TF/farmerbot-script/blob/main/fbot_README.md). ***
+
 # Automatic .env and config.md Script for Farmerbot (Bash, Python and VLang)
 
 The following script generates the .env and config.md files for the Farmerbot.
