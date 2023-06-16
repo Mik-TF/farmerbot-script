@@ -9,3 +9,5 @@
   * docker build --no-cache -t file_creator_image:1.0 .
 
 Then you can test the farmerbot_quick_guide.md file.
+
+Note: This won't be needed when the publish.yml will be available.
