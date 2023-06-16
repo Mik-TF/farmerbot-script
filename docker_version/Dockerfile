@@ -18,7 +18,6 @@ RUN v -prod files/file_creator.v
 
 # ===== SECOND STAGE ======
 # Copy the Farmerbot's file creator binaries
-# Create a volume to store the files 
 # Create an entrypoint to run the file creator binaries
 
 FROM ubuntu:20.04
