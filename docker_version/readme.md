@@ -1,4 +1,4 @@
-# Prerequisites to Docker Run
+# Prerequisites to Farmerbot Deployment Guide
 
 * Clone the repository
   * git clone https://github.com/Mik-TF/farmerbot-script
